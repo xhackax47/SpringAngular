@@ -36,7 +36,7 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
-			<version>9.3-1102-jdbc41</version>
+			<version>42.2.5</version>
 		</dependency>
 
 		<dependency>
@@ -165,7 +165,7 @@
 							<outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${project.parent.basedir}/tutorial-web/src/main/web/dist/np-app/</directory>
+									<directory>${project.parent.basedir}/SpringAngularWeb/src/main/web/dist/web/</directory>
 								</resource>
 							</resources>
 						</configuration>

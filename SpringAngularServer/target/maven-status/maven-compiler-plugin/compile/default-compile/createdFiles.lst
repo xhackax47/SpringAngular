@@ -1,2 +1,5 @@
 fr\xhackax47\application\Application.class
+fr\xhackax47\controller\UserController.class
 fr\xhackax47\controller\HomeController.class
+fr\xhackax47\models\User.class
+fr\xhackax47\dao\UserRepository.class

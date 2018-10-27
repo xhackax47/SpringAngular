@@ -1,7 +1,10 @@
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\application\Application.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\controller\UserController.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\models\User.java
+D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\service\UserService.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\controller\package-info.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\dao\UserRepository.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\application\package-info.java
 D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\controller\HomeController.java
+D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\config\SecurityConfig.java
+D:\eclipse-workspace\SpringAngular\SpringAngularServer\src\main\java\fr\xhackax47\config\AppAuthProvider.java

@@ -1,5 +1,8 @@
 package fr.xhackax47.models;
 
+import java.io.Serializable;
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -9,56 +12,89 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-@Table(name="user")
-public class User {
+@Table(name = "USER")
+public class User implements Serializable, UserDetails{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id")
-	private Long id;
-	@Column(name="userName")
-	private String userName;
-	@Column(name="passWord")
-	private String passWord;
+	private Long userId;
+	
+	private String username;
+	
+	private String password;
 	
 	public User() {
 		
 	}
 	
-	public User(Long id,String userName,String passWord) {
+	public User(Long userId,String username,String passWord) {
 		super();
-		this.id = id;
-		this.userName = userName;
-		this.passWord = passWord;
+		this.userId = userId;
+		this.username = username;
+		this.password = passWord;
 	}
 
 	public Long getId() {
-		return id;
+		return userId;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		this.userId = id;
 	}
 
-	public String getUserName() {
-		return userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public String getPassWord() {
-		return passWord;
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public void setPassWord(String passWord) {
-		this.passWord = passWord;
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isAccountNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isAccountNonLocked() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isCredentialsNonExpired() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isEnabled() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
-	
-
 }

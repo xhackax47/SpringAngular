@@ -1,5 +1,11 @@
 fr\xhackax47\application\Application.class
+fr\xhackax47\service\UserService.class
+fr\xhackax47\config\SecurityConfig$AuthentificationLogoutSuccessHandler.class
+fr\xhackax47\config\SecurityConfig$1.class
+fr\xhackax47\config\SecurityConfig.class
 fr\xhackax47\controller\UserController.class
 fr\xhackax47\controller\HomeController.class
 fr\xhackax47\models\User.class
 fr\xhackax47\dao\UserRepository.class
+fr\xhackax47\config\AppAuthProvider.class
+fr\xhackax47\config\SecurityConfig$AuthentificationLoginSuccessHandler.class

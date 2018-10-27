@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = { "fr.xhackax47" })
-@EntityScan(basePackages = "fr.xhackax47")
+@EnableJpaRepositories(basePackages = { "fr.xhackax47.dao" })
+@EntityScan(basePackages = "fr.xhackax47.models")
 @EnableJpaAuditing
 public class Application extends SpringBootServletInitializer{
 

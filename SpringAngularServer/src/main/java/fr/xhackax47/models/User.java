@@ -1,9 +1,7 @@
 package fr.xhackax47.models;
 
-import java.io.Serializable;
 import java.util.Collection;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
@@ -18,10 +16,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @Table(name = "USER")
-public class User implements Serializable, UserDetails{
-	
+public class User implements UserDetails{
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long userId;
 	
 	private String username;
